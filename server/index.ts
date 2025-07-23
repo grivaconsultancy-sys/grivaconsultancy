@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
+import { handleContactSubmission, getContactSubmissions, updateSubmissionStatus } from "./routes/contact";
 
 export function createServer() {
   const app = express();
@@ -16,6 +17,11 @@ export function createServer() {
   });
 
   app.get("/api/demo", handleDemo);
+  
+  // Contact form routes
+  app.post("/api/contact", handleContactSubmission);
+  app.get("/api/contact/submissions", getContactSubmissions);
+  app.put("/api/contact/submissions/:id", updateSubmissionStatus);
 
   return app;
 }
