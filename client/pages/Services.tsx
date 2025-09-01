@@ -13,7 +13,6 @@ import {
   ArrowRight,
   Clock,
   Shield,
-  DollarSign,
   Phone
 } from 'lucide-react';
 
@@ -209,7 +208,7 @@ export default function Services() {
       description: "Fast processing with guaranteed delivery timelines"
     },
     {
-      icon: <DollarSign className="h-8 w-8" />,
+      icon: <Calculator className="h-8 w-8" />,
       title: "Transparent Pricing",
       description: "No hidden charges, upfront pricing for all services"
     }
@@ -271,7 +270,6 @@ export default function Services() {
                         
                         <div className="flex flex-wrap gap-4 mb-6">
                           <div className="flex items-center space-x-2">
-                            <DollarSign className="h-5 w-5 text-green-600" />
                             <span className="font-semibold text-green-600">{service.price}</span>
                           </div>
                           <div className="flex items-center space-x-2">
