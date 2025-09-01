@@ -47,6 +47,12 @@ export default function Index() {
       features: ["Annual Filing", "Board Meetings", "Audit Support", "ROC Compliance"]
     },
     {
+      icon: <Calculator className="h-8 w-8" />,
+      title: "Accounting",
+      description: "Bookkeeping, bank reconciliation, payroll, and monthly statements.",
+      features: ["Bookkeeping", "Reconciliation", "Payroll", "Monthly Statements"]
+    },
+    {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Loan Consultancy",
       description: "Expert guidance for business and personal loan applications.",
