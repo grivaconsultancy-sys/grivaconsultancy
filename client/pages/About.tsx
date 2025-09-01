@@ -208,38 +208,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="mb-4">Our Team</Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our Expert Professionals
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our team of qualified chartered accountants and business advisors 
-              brings decades of combined experience to serve your needs.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-8 text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <Users className="h-12 w-12 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                  <p className="text-primary font-medium mb-2">{member.role}</p>
-                  <Badge variant="secondary" className="mb-4">{member.experience}</Badge>
-                  <p className="text-sm text-gray-600 mb-4">{member.description}</p>
-                  <p className="text-xs text-gray-500 font-medium">{member.specialization}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Certifications & Credentials */}
       <section className="py-20 bg-gray-50">
@@ -369,6 +337,11 @@ export default function About() {
             <p className="text-xl text-gray-600">
               Contact us today to discuss how we can help you achieve your financial goals
             </p>
+            <div className="mt-6">
+              <Button asChild size="lg" className="blink">
+                <Link to="/book">File your return now...</Link>
+              </Button>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -404,6 +377,16 @@ export default function About() {
                     Chat Now
                   </a>
                 </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg text-center">
+              <CardContent className="p-8">
+                <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
+                <h3 className="font-semibold text-gray-900 mb-2">Office Address</h3>
+                <p className="text-gray-600 mb-4">
+                  102, Lotus Corporate House, RTO Road, Near Jweles Circle, Vijayraj Nagar, Bhavnagar.
+                </p>
               </CardContent>
             </Card>
           </div>

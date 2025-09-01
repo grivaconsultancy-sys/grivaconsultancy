@@ -8,6 +8,7 @@ export function Footer() {
     'GST Return',
     'Company Registration',
     'Company Compliances',
+    'Accounting',
     'Loan Consultancy',
     'Mutual Fund',
     'Tax Planning'
@@ -102,6 +103,15 @@ export function Footer() {
                 <div>
                   <p className="text-gray-300 text-sm">Business Hours</p>
                   <p className="text-xs text-gray-400">Mon-Sat: 9:00 AM - 7:00 PM</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <div className="h-4 w-4 mt-1 text-primary">@</div>
+                <div>
+                  <a href="https://www.instagram.com/griva_tax_consultancy/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-primary">
+                    @griva_tax_consultancy
+                  </a>
+                  <p className="text-xs text-gray-400">Instagram</p>
                 </div>
               </div>
             </div>

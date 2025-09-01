@@ -48,7 +48,7 @@ export default function Services() {
       icon: <Building2 className="h-12 w-12" />,
       title: "GST Registration & Returns",
       subtitle: "New Registration | Monthly Returns",
-      price: "Registration: ₹2,999 | Returns: ₹499/month",
+      price: "Registration: Starting ₹1,999 | Returns: Starting ₹999/month",
       duration: "7-10 Days",
       description: "Complete GST registration and ongoing return filing services for all business types.",
       features: [
@@ -59,6 +59,7 @@ export default function Services() {
         "Input tax credit optimization",
         "Compliance calendar",
         "Notice handling",
+        "Appeal handling",
         "Amendment support"
       ],
       process: [
@@ -107,13 +108,38 @@ export default function Services() {
         "Income tax audit",
         "Filing of forms",
         "Compliance calendar",
-        "Penalty avoidance"
+        "Penalty avoidance",
+        "Appeal filing support"
       ],
       process: [
         "Compliance assessment",
         "Document preparation",
         "Statutory filings",
         "Ongoing monitoring"
+      ]
+    },
+    {
+      icon: <Calculator className="h-12 w-12" />,
+      title: "Accounting",
+      subtitle: "Bookkeeping | Reconciliation | Payroll",
+      price: "Starting ₹1,999/month",
+      duration: "Ongoing",
+      description: "Professional accounting services including bookkeeping, monthly statements, GST/TDS reconciliation, and payroll processing.",
+      features: [
+        "Daily bookkeeping",
+        "Ledger maintenance",
+        "Bank reconciliation",
+        "GST reconciliation",
+        "TDS compliance",
+        "Payroll processing",
+        "Monthly financial statements",
+        "MIS reports"
+      ],
+      process: [
+        "Requirement assessment",
+        "Data setup & onboarding",
+        "Monthly processing",
+        "Review & reporting"
       ]
     },
     {

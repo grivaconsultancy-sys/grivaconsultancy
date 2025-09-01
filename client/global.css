@@ -104,3 +104,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Blink animation for attention-grabbing buttons */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 1s linear infinite;
+}

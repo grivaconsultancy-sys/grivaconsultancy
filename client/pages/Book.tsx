@@ -39,38 +39,50 @@ export default function Book() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const services = [
-    { 
-      name: 'Income Tax Return Filing', 
+    {
+      name: 'Income Tax Return Filing',
       price: 'Starting ₹999',
       duration: '30-45 mins',
       description: 'Complete ITR filing with tax optimization'
     },
-    { 
-      name: 'GST Registration', 
-      price: 'Starting ₹2,999',
+    {
+      name: 'GST Registration',
+      price: 'Starting ₹1,999',
       duration: '45-60 mins',
       description: 'New GST registration with complete documentation'
     },
-    { 
-      name: 'Company Registration', 
+    {
+      name: 'GST Returns',
+      price: 'Starting ₹999/month',
+      duration: 'Monthly',
+      description: 'Monthly GST return filing (GSTR-1, 3B) and compliance'
+    },
+    {
+      name: 'Company Registration',
       price: 'Starting ₹9,999',
       duration: '60-90 mins',
       description: 'Private Limited or LLP incorporation'
     },
-    { 
-      name: 'Tax Planning Consultation', 
+    {
+      name: 'Accounting',
+      price: 'Starting ₹1,999/month',
+      duration: 'Ongoing',
+      description: 'Bookkeeping, reconciliation, payroll and monthly statements'
+    },
+    {
+      name: 'Tax Planning Consultation',
       price: 'Starting ₹1,999',
       duration: '60 mins',
       description: 'Comprehensive tax planning strategy'
     },
-    { 
-      name: 'Loan Consultancy', 
+    {
+      name: 'Loan Consultancy',
       price: 'Starting ₹1,499',
       duration: '45 mins',
       description: 'Business or personal loan guidance'
     },
-    { 
-      name: 'Mutual Fund Advisory', 
+    {
+      name: 'Mutual Fund Advisory',
       price: 'Starting ₹999',
       duration: '30-45 mins',
       description: 'Investment planning and portfolio review'
