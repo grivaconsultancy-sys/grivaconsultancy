@@ -289,13 +289,13 @@ export default function Services() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-3">
-                          <Button asChild>
+                          <Button asChild className="w-full sm:w-auto">
                             <Link to="/book">
                               Book Now
                               <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
                           </Button>
-                          <Button asChild variant="outline">
+                          <Button asChild variant="outline" className="w-full sm:w-auto">
                             <a href="https://wa.me/+917600510309" target="_blank" rel="noopener noreferrer">
                               <Phone className="mr-2 h-4 w-4" />
                               Get Quote
@@ -409,7 +409,7 @@ export default function Services() {
                   <li>• Startups & new businesses</li>
                   <li>• Retail & trading companies</li>
                   <li>• Service providers</li>
-                  <li>• Manufacturing units</li>
+                  <li>��� Manufacturing units</li>
                   <li>• E-commerce businesses</li>
                 </ul>
               </CardContent>
