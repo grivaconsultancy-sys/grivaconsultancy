@@ -75,19 +75,19 @@ export default function Index() {
 
   const testimonials = [
     {
-      name: "સાવાની સ્મિત",
+      name: "Savani Smit",
       role: "Business Owner",
       content: "Excellent service for GST registration and returns. Very professional and timely.",
       rating: 5
     },
     {
-      name: "મેહુલ વાટુકિયા",
+      name: "Mehul Vatukiya",
       role: "Individual Taxpayer",
       content: "Got maximum refund on my ITR. Highly recommend their tax planning services.",
       rating: 5
     },
     {
-      name: "યશપાલ પધિયાર",
+      name: "Yashpal Padhiyar",
       role: "Startup Founder",
       content: "Smooth company registration process. They handled everything professionally.",
       rating: 5
