@@ -120,10 +120,10 @@ export default function About() {
             </div>
 
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Professional team meeting" 
-                className="rounded-2xl shadow-2xl"
+              <img
+                src="https://images.unsplash.com/photo-1560472355-536de3962603?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Professional team meeting"
+                className="w-full h-auto rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
                 <div className="flex items-center space-x-3">
