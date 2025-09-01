@@ -255,7 +255,7 @@ export default function Index() {
                 </div>
               </div>
 
-              <Button asChild size="lg" className="mt-8">
+              <Button asChild size="lg" className="mt-8 w-full sm:w-auto">
                 <Link to="/about">Learn More About Us</Link>
               </Button>
             </div>
