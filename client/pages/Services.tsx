@@ -230,13 +230,13 @@ export default function Services() {
               solutions for all your financial and compliance needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="w-full sm:w-auto">
                 <Link to="/book">
                   <Calculator className="mr-2 h-5 w-5" />
                   Book Consultation
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black">
                 <a href="https://wa.me/+917600510309" target="_blank" rel="noopener noreferrer">
                   <Phone className="mr-2 h-5 w-5" />
                   Get Quote
@@ -445,10 +445,10 @@ export default function Services() {
             Get professional tax and business solutions today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
+            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
               <Link to="/book">Book Free Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
               <a href="https://wa.me/+917600510309" target="_blank" rel="noopener noreferrer">
                 <Phone className="mr-2 h-5 w-5" />
                 Call +91 7600510309
