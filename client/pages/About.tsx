@@ -110,10 +110,10 @@ export default function About() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg">
+                <Button asChild size="lg" className="w-full sm:w-auto">
                   <Link to="/contact">Get in Touch</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-black">
+                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black">
                   <Link to="/services">Our Services</Link>
                 </Button>
               </div>
@@ -338,7 +338,7 @@ export default function About() {
               Contact us today to discuss how we can help you achieve your financial goals
             </p>
             <div className="mt-6">
-              <Button asChild size="lg" className="blink">
+              <Button asChild size="lg" className="blink w-full sm:w-auto">
                 <Link to="/book">File your return now...</Link>
               </Button>
             </div>
@@ -404,10 +404,10 @@ export default function About() {
             about your success as much as you do.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary">
+            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
               <Link to="/book">Schedule Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
               <Link to="/contact">Contact Us Today</Link>
             </Button>
           </div>
