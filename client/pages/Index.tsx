@@ -117,13 +117,13 @@ export default function Index() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="text-lg">
+                <Button asChild size="lg" className="text-lg w-full sm:w-auto">
                   <Link to="/book">
                     Book Free Consultation
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg border-white text-white hover:bg-white hover:text-black">
+                <Button asChild variant="outline" size="lg" className="text-lg w-full sm:w-auto border-white text-white hover:bg-white hover:text-black">
                   <a href="https://wa.me/+917600510309" target="_blank" rel="noopener noreferrer">
                     <Phone className="mr-2 h-5 w-5" />
                     WhatsApp Now
@@ -329,10 +329,10 @@ export default function Index() {
             and discover how much you could save.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="text-lg">
+            <Button asChild size="lg" variant="secondary" className="text-lg w-full sm:w-auto">
               <Link to="/book">Book Free Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-lg border-white text-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="text-lg w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
               <a href="https://wa.me/+917600510309" target="_blank" rel="noopener noreferrer">
                 <Phone className="mr-2 h-5 w-5" />
                 Call +91 7600510309
