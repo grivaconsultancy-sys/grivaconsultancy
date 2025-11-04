@@ -21,14 +21,14 @@ export function Header() {
         <div className="border-b border-gray-200 py-2">
           <div className="flex justify-between items-center text-sm text-gray-600">
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-1">
+              <a href="tel:+917600510309" className="flex items-center space-x-1 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
                 <span>+91 7600510309</span>
-              </div>
-              <div className="flex items-center space-x-1">
+              </a>
+              <a href="mailto:grivaconsultancy@gmail.com" className="flex items-center space-x-1 hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
                 <span>grivaconsultancy@gmail.com</span>
-              </div>
+              </a>
             </div>
             <div className="hidden md:block">
               <span>Professional Tax Consultancy Services</span>
