@@ -380,13 +380,18 @@ export default function About() {
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg text-center">
+            <Card className="border-0 shadow-lg text-center hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 mb-2">Office Address</h3>
                 <p className="text-gray-600 mb-4">
                   102, Lotus Corporate House, RTO Road, Near Jweles Circle, Vijayraj Nagar, Bhavnagar.
                 </p>
+                <Button asChild variant="outline" size="sm">
+                  <a href="https://maps.google.com/?q=102+Lotus+Corporate+House+RTO+Road+Bhavnagar" target="_blank" rel="noopener noreferrer">
+                    View on Map
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           </div>
