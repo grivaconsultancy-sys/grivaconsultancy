@@ -262,7 +262,9 @@ ${formData.message}
                   <Phone className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 7600510309</p>
+                    <a href="tel:+917600510309" className="text-gray-600 hover:text-primary transition-colors">
+                      +91 7600510309
+                    </a>
                     <p className="text-sm text-gray-500">Mon-Sat 9AM-7PM</p>
                   </div>
                 </div>
@@ -271,7 +273,9 @@ ${formData.message}
                   <Mail className="h-6 w-6 text-primary mt-1" />
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">grivaconsultancy@gmail.com</p>
+                    <a href="mailto:grivaconsultancy@gmail.com" className="text-gray-600 hover:text-primary transition-colors">
+                      grivaconsultancy@gmail.com
+                    </a>
                     <p className="text-sm text-gray-500">24/7 Email Support</p>
                   </div>
                 </div>
