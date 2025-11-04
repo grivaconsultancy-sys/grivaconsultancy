@@ -293,6 +293,17 @@ ${formData.message}
                     <p className="text-sm text-gray-500">9:00 AM - 7:00 PM</p>
                   </div>
                 </div>
+
+                <div className="flex items-start space-x-4">
+                  <MapPin className="h-6 w-6 text-primary mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Office Address</h3>
+                    <a href="https://maps.google.com/?q=102+Lotus+Corporate+House+RTO+Road+Bhavnagar" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+                      102, Lotus Corporate House, RTO Road, Bhavnagar
+                    </a>
+                    <p className="text-sm text-gray-500">Click to view on map</p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
