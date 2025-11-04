@@ -106,12 +106,12 @@ export function Footer() {
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <div className="h-4 w-4 mt-1 text-primary">@</div>
+                <MapPin className="h-4 w-4 mt-1 text-primary" />
                 <div>
-                  <a href="https://www.instagram.com/griva_tax_consultancy/?hl=en" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-primary">
-                    @griva_tax_consultancy
+                  <a href="https://maps.google.com/?q=102+Lotus+Corporate+House+RTO+Road+Bhavnagar" target="_blank" rel="noopener noreferrer" className="text-gray-300 text-sm hover:text-primary">
+                    102, Lotus Corporate House, RTO Road, Bhavnagar
                   </a>
-                  <p className="text-xs text-gray-400">Instagram</p>
+                  <p className="text-xs text-gray-400">Office Address</p>
                 </div>
               </div>
             </div>
