@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Book Consultation', href: '/book' },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+    { name: "Book Consultation", href: "/book" },
   ];
 
   return (
@@ -21,11 +21,17 @@ export function Header() {
         <div className="border-b border-gray-200 py-2">
           <div className="flex justify-between items-center text-sm text-gray-600">
             <div className="flex items-center space-x-4">
-              <a href="tel:+917600510309" className="flex items-center space-x-1 hover:text-primary transition-colors">
+              <a
+                href="tel:+917600510309"
+                className="flex items-center space-x-1 hover:text-primary transition-colors"
+              >
                 <Phone className="h-4 w-4" />
                 <span>+91 7600510309</span>
               </a>
-              <a href="mailto:grivaconsultancy@gmail.com" className="flex items-center space-x-1 hover:text-primary transition-colors">
+              <a
+                href="mailto:grivaconsultancy@gmail.com"
+                className="flex items-center space-x-1 hover:text-primary transition-colors"
+              >
                 <Mail className="h-4 w-4" />
                 <span>grivaconsultancy@gmail.com</span>
               </a>
@@ -39,13 +45,15 @@ export function Header() {
         {/* Main navigation */}
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2">
-            <img 
-              src="https://cdn.builder.io/api/v1/assets/2e3165756011448d8df6628c432b5ba9/logo-9e502f?format=webp&width=800" 
-              alt="Griva Consultancy" 
+            <img
+              src="https://cdn.builder.io/api/v1/assets/2e3165756011448d8df6628c432b5ba9/logo-9e502f?format=webp&width=800"
+              alt="Griva Consultancy"
               className="h-12 w-auto"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Griva Consultancy</h1>
+              <h1 className="text-xl font-bold text-gray-900">
+                Griva Consultancy
+              </h1>
               <p className="text-sm text-primary">Tax & Business Solutions</p>
             </div>
           </Link>
@@ -79,7 +87,11 @@ export function Header() {
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
 

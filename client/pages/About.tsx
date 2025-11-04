@@ -1,11 +1,17 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Link } from 'react-router-dom';
-import { 
-  Users, 
-  Award, 
-  Target, 
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
+import {
+  Users,
+  Award,
+  Target,
   Heart,
   CheckCircle,
   TrendingUp,
@@ -14,38 +20,42 @@ import {
   Phone,
   Mail,
   MapPin,
-  Star
-} from 'lucide-react';
+  Star,
+} from "lucide-react";
 
 export default function About() {
   const stats = [
     { number: "1000+", label: "Happy Clients" },
     { number: "5+", label: "Years Experience" },
     { number: "98%", label: "Client Satisfaction" },
-    { number: "24/7", label: "Support Available" }
+    { number: "24/7", label: "Support Available" },
   ];
 
   const values = [
     {
       icon: <Target className="h-8 w-8" />,
       title: "Excellence",
-      description: "We strive for perfection in every service we provide, ensuring accuracy and quality."
+      description:
+        "We strive for perfection in every service we provide, ensuring accuracy and quality.",
     },
     {
       icon: <Heart className="h-8 w-8" />,
       title: "Client-Centric",
-      description: "Your success is our priority. We tailor our services to meet your specific needs."
+      description:
+        "Your success is our priority. We tailor our services to meet your specific needs.",
     },
     {
       icon: <Shield className="h-8 w-8" />,
       title: "Trust & Integrity",
-      description: "We maintain the highest standards of professional ethics and confidentiality."
+      description:
+        "We maintain the highest standards of professional ethics and confidentiality.",
     },
     {
       icon: <TrendingUp className="h-8 w-8" />,
       title: "Innovation",
-      description: "We embrace technology and modern practices to deliver efficient solutions."
-    }
+      description:
+        "We embrace technology and modern practices to deliver efficient solutions.",
+    },
   ];
 
   const team = [
@@ -54,22 +64,25 @@ export default function About() {
       role: "Founder & Managing Partner",
       experience: "8+ Years",
       specialization: "Corporate Tax, Business Setup",
-      description: "Chartered Accountant with extensive experience in tax planning and business consultancy."
+      description:
+        "Chartered Accountant with extensive experience in tax planning and business consultancy.",
     },
     {
       name: "CA Priya Sharma",
       role: "Senior Tax Consultant",
       experience: "6+ Years",
       specialization: "Individual Tax, GST",
-      description: "Expert in individual tax returns and GST compliance with a track record of maximizing client savings."
+      description:
+        "Expert in individual tax returns and GST compliance with a track record of maximizing client savings.",
     },
     {
       name: "Amit Kumar",
       role: "Business Advisor",
       experience: "5+ Years",
       specialization: "Company Registration, Loans",
-      description: "Specialized in company incorporation and loan consultancy services."
-    }
+      description:
+        "Specialized in company incorporation and loan consultancy services.",
+    },
   ];
 
   const certifications = [
@@ -77,7 +90,7 @@ export default function About() {
     "Goods and Services Tax Practitioner",
     "Certified Management Accountant (CMA)",
     "ISO 9001:2015 Quality Management",
-    "Data Security & Privacy Certified"
+    "Data Security & Privacy Certified",
   ];
 
   return (
@@ -88,22 +101,27 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-primary/20 text-primary border-primary/30">About Us</Badge>
+                <Badge className="bg-primary/20 text-primary border-primary/30">
+                  About Us
+                </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                   Your Trusted
                   <span className="text-primary block">Tax Partner</span>
                 </h1>
                 <p className="text-xl text-gray-300 leading-relaxed">
-                  Since our inception, Griva Consultancy has been committed to providing 
-                  exceptional tax and business services, helping individuals and businesses 
-                  achieve financial success and regulatory compliance.
+                  Since our inception, Griva Consultancy has been committed to
+                  providing exceptional tax and business services, helping
+                  individuals and businesses achieve financial success and
+                  regulatory compliance.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                 {stats.map((stat, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-primary">{stat.number}</div>
+                    <div className="text-2xl md:text-3xl font-bold text-primary">
+                      {stat.number}
+                    </div>
                     <div className="text-sm text-gray-300">{stat.label}</div>
                   </div>
                 ))}
@@ -113,7 +131,12 @@ export default function About() {
                 <Button asChild size="lg" className="w-full sm:w-auto">
                   <Link to="/contact">Get in Touch</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black">
+                <Button
+                  asChild
+                  variant="outline"
+                  size="lg"
+                  className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-black"
+                >
                   <Link to="/services">Our Services</Link>
                 </Button>
               </div>
@@ -131,8 +154,12 @@ export default function About() {
                     <Award className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-gray-900">5+ Years</div>
-                    <div className="text-sm text-gray-600">Trusted Excellence</div>
+                    <div className="text-2xl font-bold text-gray-900">
+                      5+ Years
+                    </div>
+                    <div className="text-sm text-gray-600">
+                      Trusted Excellence
+                    </div>
                   </div>
                 </div>
               </div>
@@ -154,26 +181,29 @@ export default function About() {
 
             <div className="space-y-8 text-lg text-gray-600 leading-relaxed">
               <p>
-                Founded with a vision to simplify tax compliance and business processes, 
-                Griva Consultancy has grown from a small practice to a trusted name in 
-                the tax consultancy industry. Our journey began with a simple belief: 
-                every individual and business deserves expert financial guidance without 
-                the complexity and high costs traditionally associated with professional services.
+                Founded with a vision to simplify tax compliance and business
+                processes, Griva Consultancy has grown from a small practice to
+                a trusted name in the tax consultancy industry. Our journey
+                began with a simple belief: every individual and business
+                deserves expert financial guidance without the complexity and
+                high costs traditionally associated with professional services.
               </p>
 
               <p>
-                Over the years, we have helped thousands of clients navigate the complex 
-                world of taxation, business registration, and financial planning. Our team 
-                of qualified professionals brings deep expertise across various domains, 
-                ensuring that our clients receive comprehensive solutions tailored to their 
-                unique needs.
+                Over the years, we have helped thousands of clients navigate the
+                complex world of taxation, business registration, and financial
+                planning. Our team of qualified professionals brings deep
+                expertise across various domains, ensuring that our clients
+                receive comprehensive solutions tailored to their unique needs.
               </p>
 
               <p>
-                Today, we continue to evolve and adapt to the changing regulatory landscape, 
-                leveraging technology and innovation to deliver faster, more efficient services 
-                while maintaining the personal touch that our clients value. Our commitment 
-                to excellence and client satisfaction remains at the heart of everything we do.
+                Today, we continue to evolve and adapt to the changing
+                regulatory landscape, leveraging technology and innovation to
+                deliver faster, more efficient services while maintaining the
+                personal touch that our clients value. Our commitment to
+                excellence and client satisfaction remains at the heart of
+                everything we do.
               </p>
             </div>
           </div>
@@ -189,17 +219,24 @@ export default function About() {
               What Drives Us Forward
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our core values guide every decision we make and every service we provide, 
-              ensuring consistent quality and client satisfaction.
+              Our core values guide every decision we make and every service we
+              provide, ensuring consistent quality and client satisfaction.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 text-center">
+              <Card
+                key={index}
+                className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+              >
                 <CardContent className="p-8">
-                  <div className="text-primary mb-4 flex justify-center">{value.icon}</div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h3>
+                  <div className="text-primary mb-4 flex justify-center">
+                    {value.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {value.title}
+                  </h3>
                   <p className="text-gray-600 text-sm">{value.description}</p>
                 </CardContent>
               </Card>
@@ -207,7 +244,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
 
       {/* Certifications & Credentials */}
       <section className="py-20 bg-gray-50">
@@ -219,9 +255,10 @@ export default function About() {
                 Qualified & Certified Professionals
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Our team holds prestigious certifications and memberships with professional 
-                bodies, ensuring that you receive advice from qualified experts who stay 
-                updated with the latest regulations and best practices.
+                Our team holds prestigious certifications and memberships with
+                professional bodies, ensuring that you receive advice from
+                qualified experts who stay updated with the latest regulations
+                and best practices.
               </p>
 
               <div className="space-y-4">
@@ -240,8 +277,12 @@ export default function About() {
                   <div className="flex items-center space-x-4">
                     <Award className="h-8 w-8 text-primary" />
                     <div>
-                      <h3 className="font-semibold text-gray-900">Professional Excellence</h3>
-                      <p className="text-sm text-gray-600">Recognized for outstanding service quality</p>
+                      <h3 className="font-semibold text-gray-900">
+                        Professional Excellence
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Recognized for outstanding service quality
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -252,8 +293,12 @@ export default function About() {
                   <div className="flex items-center space-x-4">
                     <Shield className="h-8 w-8 text-primary" />
                     <div>
-                      <h3 className="font-semibold text-gray-900">Data Security Certified</h3>
-                      <p className="text-sm text-gray-600">Your information is always protected</p>
+                      <h3 className="font-semibold text-gray-900">
+                        Data Security Certified
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        Your information is always protected
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -264,8 +309,12 @@ export default function About() {
                   <div className="flex items-center space-x-4">
                     <Users className="h-8 w-8 text-primary" />
                     <div>
-                      <h3 className="font-semibold text-gray-900">Client Satisfaction</h3>
-                      <p className="text-sm text-gray-600">98% client satisfaction rate</p>
+                      <h3 className="font-semibold text-gray-900">
+                        Client Satisfaction
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        98% client satisfaction rate
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -284,7 +333,7 @@ export default function About() {
               Your Success is Our Mission
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We go beyond traditional consulting to become your trusted partner 
+              We go beyond traditional consulting to become your trusted partner
               in financial success and business growth.
             </p>
           </div>
@@ -293,10 +342,13 @@ export default function About() {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Clock className="h-12 w-12 text-primary mx-auto mb-6" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Quick & Efficient</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Quick & Efficient
+                </h3>
                 <p className="text-gray-600">
-                  Fast turnaround times without compromising on quality. We understand 
-                  the importance of meeting deadlines in the business world.
+                  Fast turnaround times without compromising on quality. We
+                  understand the importance of meeting deadlines in the business
+                  world.
                 </p>
               </CardContent>
             </Card>
@@ -304,10 +356,13 @@ export default function About() {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <TrendingUp className="h-12 w-12 text-primary mx-auto mb-6" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Proven Results</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Proven Results
+                </h3>
                 <p className="text-gray-600">
-                  Track record of helping clients save thousands in taxes and successfully 
-                  launching hundreds of businesses across various industries.
+                  Track record of helping clients save thousands in taxes and
+                  successfully launching hundreds of businesses across various
+                  industries.
                 </p>
               </CardContent>
             </Card>
@@ -315,10 +370,12 @@ export default function About() {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardContent className="p-8 text-center">
                 <Heart className="h-12 w-12 text-primary mx-auto mb-6" />
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Personal Touch</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Personal Touch
+                </h3>
                 <p className="text-gray-600">
-                  We believe in building long-term relationships. Every client receives 
-                  personalized attention and customized solutions.
+                  We believe in building long-term relationships. Every client
+                  receives personalized attention and customized solutions.
                 </p>
               </CardContent>
             </Card>
@@ -335,7 +392,8 @@ export default function About() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-xl text-gray-600">
-              Contact us today to discuss how we can help you achieve your financial goals
+              Contact us today to discuss how we can help you achieve your
+              financial goals
             </p>
             <div className="mt-6">
               <Button asChild size="lg" className="blink w-full sm:w-auto">
@@ -373,7 +431,11 @@ export default function About() {
                 <h3 className="font-semibold text-gray-900 mb-2">WhatsApp</h3>
                 <p className="text-gray-600 mb-4">Instant messaging</p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://wa.me/+917600510309" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://wa.me/+917600510309"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Chat Now
                   </a>
                 </Button>
@@ -383,12 +445,19 @@ export default function About() {
             <Card className="border-0 shadow-lg text-center hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
                 <MapPin className="h-8 w-8 text-primary mx-auto mb-4" />
-                <h3 className="font-semibold text-gray-900 mb-2">Office Address</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  Office Address
+                </h3>
                 <p className="text-gray-600 mb-4">
-                  102, Lotus Corporate House, RTO Road, Near Jweles Circle, Vijayraj Nagar, Bhavnagar.
+                  102, Lotus Corporate House, RTO Road, Near Jweles Circle,
+                  Vijayraj Nagar, Bhavnagar.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://maps.google.com/?q=102+Lotus+Corporate+House+RTO+Road+Bhavnagar" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://maps.google.com/?q=102+Lotus+Corporate+House+RTO+Road+Bhavnagar"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     View on Map
                   </a>
                 </Button>
@@ -405,14 +474,24 @@ export default function About() {
             Let's Build Your Financial Success Together
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Experience the difference of working with true professionals who care 
-            about your success as much as you do.
+            Experience the difference of working with true professionals who
+            care about your success as much as you do.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
+            <Button
+              asChild
+              size="lg"
+              variant="secondary"
+              className="w-full sm:w-auto"
+            >
               <Link to="/book">Schedule Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-primary"
+            >
               <Link to="/contact">Contact Us Today</Link>
             </Button>
           </div>
