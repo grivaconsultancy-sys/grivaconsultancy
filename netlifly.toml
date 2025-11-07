@@ -3,7 +3,7 @@
   command = "npm run build:client" 
   
   # Yeh aapka final working folder hai jise deploy karna hai
-  publish = "dist/spa" 
+  publish = "dist" 
 
 # Yahi woh setting hai jo Node.js server error ko theek karegi!
 [build.environment]
