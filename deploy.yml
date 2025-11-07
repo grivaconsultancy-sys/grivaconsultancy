@@ -28,7 +28,7 @@ jobs:
 
       - name: Build Builder.io Project 🔨
         # Builder.io projects mein aam taur par 'npm run build' hi command hoti hai
-        run: npm run build -- -- base=/grivaconsultancy-sys/
+        run: npm run build
       
       - name: Deploy to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
