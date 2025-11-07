@@ -1,9 +1,12 @@
 [build]
-  # Yeh command Netlify ko server error ko bypass karke sirf client build karne ke liye majboor karegi
+  # Yeh command server-side build ko bypass karke sirf client build karegi
   command = "npm run build:client" 
-
+  
   # Yeh aapka final working folder hai jise deploy karna hai
   publish = "dist/spa" 
 
+# Yahi woh setting hai jo Node.js server error ko theek karegi!
 [build.environment]
   NODE_VERSION = "18"
+  # 💥 Yahi woh line hai jo server-side dependencies ko ignore karegi
+  NPM_FLAGS = "--production=false"
