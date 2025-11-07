@@ -1,4 +1,4 @@
-name: Final Deployment to GitHub Pages
+name: Vite Build and GitHub Pages Deploy
 
 on:
   push:
@@ -10,10 +10,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -21,12 +21,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
-        run: npm run build
+      - name: Run Vite Build (with Base Path)
+        # Yeh build command Base Path ko theek karega
+        run: npm run build -- --base=/grivaconsultancy-sys/ 
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/spa  # <-- Aapki file mein 'dist/spa' tha, isliye yahi use kar rahe hain
+          # Aapka build folder 'dist/spa' tha
+          publish_dir: ./dist/spa 
           cname: grivaconsultancy.info
