@@ -1,6 +1,7 @@
 {
   "name": "fusion-starter",
   "private": true,
+  "homepage": "/grivaconsultancy-sys",
   "type": "module",
   "pkg": {
     "assets": [
