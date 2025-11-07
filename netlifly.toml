@@ -1,0 +1,9 @@
+[build]
+  # Yeh command Netlify ko server error ko bypass karke sirf client build karne ke liye majboor karegi
+  command = "npm run build:client" 
+
+  # Yeh aapka final working folder hai jise deploy karna hai
+  publish = "dist/spa" 
+
+[build.environment]
+  NODE_VERSION = "18"
